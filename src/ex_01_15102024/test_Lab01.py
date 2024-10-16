@@ -9,3 +9,4 @@ def test_sample():
      print(driver.title)
      assert driver.current_url == "https://katalon-demo-cura.herokuapp.com/"
      assert driver.title == "CURA Healthcare Service"
+     assert driver.page_source.__contains__("CURA Healthcare Service")
