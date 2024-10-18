@@ -33,4 +33,3 @@ class TestVerifyTitleName():
         self.driver.execute_script("window.scrollTo(0,500)")
         self.driver.find_element(By.CSS_SELECTOR, "h4").click()
         assert self.driver.title == "CURA Healthcare Service"
-
