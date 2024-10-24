@@ -24,7 +24,8 @@ def test_verify_EbayProduct():
 # Wait for the search results to load (adjust wait time if needed)
     product_listings = WebDriverWait(driver, 10).until(
     EC.presence_of_all_elements_located((By.CSS_SELECTOR, '.s-item')))
-
+    product_length = str(len(product_listings))
+    print("The Number of products are :", product_length)
 # Extract product details
     for listing in product_listings:
 
@@ -38,7 +39,10 @@ def test_verify_EbayProduct():
             By.CSS_SELECTOR, '.s-item__price')
             product_price = product_price.text.strip()
 
+            price_length = str(len(product_price))
+            print(price_length)
 
             print(f"Product Name: {product_name} Symbol:{symbol} Price: {product_price}")
+            assert len(product_length) == len(price_length)
 
 
