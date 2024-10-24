@@ -1,9 +1,9 @@
-import selenium
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import allure
-import pytest
+
 
 
 @allure.title("Verify titles of the search are getting populated.")
