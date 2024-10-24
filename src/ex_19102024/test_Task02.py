@@ -51,5 +51,5 @@ def test_verify_OpenCart_Message_OpenCart():
     created_Message=driver.find_element(By.ID,"content")
     time.sleep(3)
     print(created_Message.text)
-    assert created_Message. == "Your Account Has Been Created!"
+    assert created_Message == "Your Account Has Been Created!"
 
