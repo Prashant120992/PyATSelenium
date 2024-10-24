@@ -7,7 +7,7 @@ import pytest
 
 
 @allure.title("Verify titles of the search are getting populated.")
-@allure.description("Verify length of the titles is matching as expected.")
+
 def test_ebay_Product_list_with_Price():
     symbol = "||"
     driver = webdriver.Chrome()
