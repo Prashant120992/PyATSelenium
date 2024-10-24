@@ -7,6 +7,7 @@ import pytest
 
 
 @allure.title("Verify titles of the search are getting populated.")
+@allure.description("Populate the Product name and their prices side by side separated by ||")
 
 def test_ebay_Product_list_with_Price():
     symbol = "||"
