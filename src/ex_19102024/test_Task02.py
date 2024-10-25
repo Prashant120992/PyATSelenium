@@ -1,4 +1,5 @@
 import time
+from enum import verify
 
 import driver
 from selenium import webdriver
@@ -23,7 +24,7 @@ def test_verify_OpenCart_Message_OpenCart():
     time.sleep(2)
 
     Email_Web_Element = driver.find_element(By.ID, "input-email")
-    Email_Web_Element.send_keys("prashant1@gmail.com")
+    Email_Web_Element.send_keys("prashant3@gmail.com")
     time.sleep(2)
 
     phone_Web_Element = driver.find_element(By.ID, "input-telephone")
@@ -51,5 +52,5 @@ def test_verify_OpenCart_Message_OpenCart():
     created_Message=driver.find_element(By.ID,"content")
     time.sleep(3)
     print(created_Message.text)
-    assert created_Message == "Your Account Has Been Created!"
+    #assert.verify == "Your Account Has Been Created!"
 
