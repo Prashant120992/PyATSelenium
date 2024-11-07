@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-def test_alert1_click():
+def test_alert_click_JS_button():
     driver=webdriver.Chrome()
     driver.get("https://the-internet.herokuapp.com/javascript_alerts")
     driver.maximize_window()
